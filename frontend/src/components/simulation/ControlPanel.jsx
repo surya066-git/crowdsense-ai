@@ -1,25 +1,27 @@
-import { Box, Typography, Paper, Grid, Button, useTheme } from '@mui/material';
-import { FiUsers, FiAlertCircle, FiCloudRain, FiShieldOff, FiTrash2, FiRefreshCcw } from 'react-icons/fi';
+import { Typography, Paper, Grid, Button, Stack, useTheme } from '@mui/material';
+import { FiUsers, FiAlertCircle, FiCloudRain, FiShieldOff, FiRefreshCcw } from 'react-icons/fi';
 
-export function ControlPanel({ onTriggerEvent, onReset }) {
-  const theme = useTheme();
-
-  const ActionButton = ({ icon, label, color, onClick }) => (
-    <Button 
-      variant="contained" 
-      startIcon={icon} 
+function ActionButton({ icon, label, color, onClick }) {
+  return (
+    <Button
+      variant="contained"
+      startIcon={icon}
       onClick={onClick}
       fullWidth
-      sx={{ 
-        bgcolor: `${color}.main`, 
+      sx={{
+        bgcolor: `${color}.main`,
         color: `${color}.contrastText`,
         py: 1.5,
-        '&:hover': { bgcolor: `${color}.dark` }
+        '&:hover': { bgcolor: `${color}.dark` },
       }}
     >
       {label}
     </Button>
   );
+}
+
+export function ControlPanel({ onTriggerEvent, onReset }) {
+  const theme = useTheme();
 
   return (
     <Paper elevation={0} sx={{ p: 4, borderRadius: 4, border: `1px solid ${theme.palette.divider}` }}>

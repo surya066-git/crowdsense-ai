@@ -1,10 +1,6 @@
-import { useMemo, useState, useContext } from 'react';
+import { useMemo, useState } from 'react';
 import { AppSnackbar } from '../components/common/AppSnackbar.jsx';
 import { AppSnackbarContext } from './AppSnackbarContextValue.js';
-
-export const useSnackbar = () => {
-  return useContext(AppSnackbarContext);
-};
 
 export function AppSnackbarProvider({ children }) {
   const [snackbar, setSnackbar] = useState({

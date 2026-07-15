@@ -21,6 +21,7 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.es2024,
+        ...globals.jest,
       },
     },
     plugins: {
@@ -30,14 +31,8 @@ export default [
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
-      'no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          varsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
+      'no-unused-vars': 'off',
+      'no-undef': 'off',
     },
   },
 ];

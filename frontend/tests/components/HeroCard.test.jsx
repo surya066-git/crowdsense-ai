@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import { HeroCard } from '../../../src/components/recommendation/HeroCard.jsx';
+import { HeroCard } from '../../src/components/recommendation/HeroCard.jsx';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const mockTheme = createTheme();

@@ -4,92 +4,164 @@ on:
   push:
     branches:
       - main
+  # Allow manual trigger of the deployment workflow (enables Rollback strategy)
+  workflow_dispatch:
+    inputs:
+      rollback_sha:
+        description: 'Git SHA to deploy or roll back to (leave blank to use the latest commit)'
+        required: false
+        default: ''
 
 env:
   PROJECT_ID: crowdsense-ai-prod
   REGION: us-central1
   GAR_LOCATION: us-central1-docker.pkg.dev
   SERVICE: crowdsense-backend
+  # Determine which commit SHA to deploy (current trigger SHA or requested rollback SHA)
+  DEPLOY_SHA: ${{ github.event.inputs.rollback_sha || github.sha }}
 
 jobs:
+  # ==============================================================================
+  # JOB 1: Test & Lint Code quality
+  # ==============================================================================
   test:
-    name: Run Tests
+    name: Run Quality Checks & Tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEPLOY_SHA }}
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      
-      - name: Backend Tests
+          cache: 'npm'
+          cache-dependency-path: |
+            backend/package-lock.json
+            frontend/package-lock.json
+
+      # Backend Checks
+      - name: Install Backend Dependencies
         working-directory: ./backend
-        run: |
-          npm ci
-          npm test
+        run: npm ci
 
-      - name: Frontend Tests
+      - name: Lint Backend
+        working-directory: ./backend
+        run: npm run lint
+
+      - name: Run Backend Tests
+        working-directory: ./backend
+        run: npm test
+
+      # Frontend Checks
+      - name: Install Frontend Dependencies
         working-directory: ./frontend
-        run: |
-          npm ci
-          npm test
+        run: npm ci
 
+      - name: Lint Frontend
+        working-directory: ./frontend
+        run: npm run lint
+
+      - name: Run Frontend Tests
+        working-directory: ./frontend
+        run: npm test
+
+  # ==============================================================================
+  # JOB 2: Deploy Frontend to Firebase Hosting
+  # ==============================================================================
   deploy-frontend:
     name: Deploy Frontend (Firebase Hosting)
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEPLOY_SHA }}
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Install & Build
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Dependencies & Build
         working-directory: ./frontend
         run: |
           npm ci
           npm run build
         env:
+          # Injected into the React bundle at build time
           VITE_API_BASE_URL: ${{ secrets.PROD_API_URL }}
+          VITE_FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+          VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+          VITE_FIREBASE_PROJECT_ID: ${{ env.PROJECT_ID }}
+          VITE_FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+          VITE_FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
+          VITE_FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
-          projectId: crowdsense-ai-prod
+          projectId: ${{ env.PROJECT_ID }}
           channelId: live
 
+  # ==============================================================================
+  # JOB 3: Deploy Backend to Google Cloud Run
+  # ==============================================================================
   deploy-backend:
     name: Deploy Backend (Cloud Run)
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - id: auth
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.DEPLOY_SHA }}
+
+      - name: Authenticate to Google Cloud
+        id: auth
         uses: google-github-actions/auth@v2
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
-      
+
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v2
 
-      - name: Docker Auth
+      - name: Authenticate Docker to GAR
         run: gcloud auth configure-docker ${{ env.GAR_LOCATION }}
 
-      - name: Build & Push Container
+      - name: Build & Push Container Image
         working-directory: ./backend
         run: |
-          docker build -t ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ github.sha }} .
-          docker push ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ github.sha }}
+          # Use Artifact Registry repository path: LOCATION-docker.pkg.dev/PROJECT/REPO/IMAGE:TAG
+          docker build -t ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ env.DEPLOY_SHA }} .
+          docker push ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ env.DEPLOY_SHA }}
 
-      - name: Deploy to Cloud Run
+      - name: Deploy to Google Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
         with:
           service: ${{ env.SERVICE }}
           region: ${{ env.REGION }}
-          image: ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ github.sha }}
+          image: ${{ env.GAR_LOCATION }}/${{ env.PROJECT_ID }}/repo/${{ env.SERVICE }}:${{ env.DEPLOY_SHA }}
           env_vars: |
             NODE_ENV=production
+            FRONTEND_ORIGIN=https://${{ env.PROJECT_ID }}.web.app
+            FIREBASE_PROJECT_ID=${{ env.PROJECT_ID }}
+            FIREBASE_STORAGE_BUCKET=${{ env.PROJECT_ID }}.firebasestorage.app
           secrets: |
             GEMINI_API_KEY=gemini-key:latest
-            FIREBASE_PRIVATE_KEY=firebase-key:latest
+          # SRE Tuning: set caps to limit cost exposure and optimize throughput
+          flags: |
+            --allow-unauthenticated
+            --min-instances=0
+            --max-instances=5
+            --concurrency=80
+            --cpu=1
+            --memory=512Mi
+            --timeout=30s

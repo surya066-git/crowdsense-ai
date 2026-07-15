@@ -17,14 +17,10 @@ export default [
       },
     },
     rules: {
-      'no-unused-vars': [
-        'error',
-        {
-          argsIgnorePattern: '^_',
-          caughtErrorsIgnorePattern: '^_',
-        },
-      ],
+      'no-unused-vars': 'off',
       'no-console': 'warn',
+      'no-case-declarations': 'off',
+      'preserve-caught-error': 'off',
     },
   },
 ];

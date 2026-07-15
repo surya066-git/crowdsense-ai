@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Box, Container, Grid, Typography, Stack, Snackbar, Alert } from '@mui/material';
+import { useCallback, useState, useEffect } from 'react';
+import { Box, Container, Grid, Typography, Stack, Snackbar, Alert, Paper } from '@mui/material';
 import { PageContainer } from '../components/layout/PageContainer.jsx';
 import { usePageTitle } from '../hooks/usePageTitle.js';
 
@@ -16,34 +16,62 @@ export default function SimulationPage() {
   usePageTitle('Real-Time Admin Simulation');
 
   const [recommendation, setRecommendation] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [events, setEvents] = useState([]);
   const [chartHistory, setChartHistory] = useState([]);
   const [notification, setNotification] = useState({ open: false, message: '', severity: 'info' });
 
-  // Baseline load
-  useEffect(() => {
-    fetchLatestRecommendation('Baseline initialized');
+  const logEvent = useCallback((message, type = 'INFO') => {
+    setEvents((prev) => [{ time: new Date().toLocaleTimeString(), message, type }, ...prev].slice(0, 15));
   }, []);
 
-  const fetchLatestRecommendation = async (reason) => {
+  const fetchLatestRecommendation = useCallback(async (reason) => {
     setLoading(true);
     try {
-      const payload = { fanLocation: { lat: 37.7760, lng: -122.4175 }, destinationSection: "Sec 101", stadiumId: "sim_1" };
+      const payload = { fanLocation: { lat: 37.7760, lng: -122.4175 }, destinationSection: 'Sec 101', stadiumId: 'sim_1' };
       const rec = await getRecommendation(payload);
       setRecommendation(rec);
-      setChartHistory(prev => [...prev, { score: rec.safetyScore }].slice(-10)); // Keep last 10
+      setChartHistory((prev) => [...prev, { score: rec.safetyScore }].slice(-10));
       logEvent(reason, 'SUCCESS');
     } catch (err) {
       logEvent('Failed to fetch recommendation: All gates might be unsafe.', 'ERROR');
       setRecommendation(null);
+    } finally {
+      setLoading(false);
     }
-    setLoading(false);
-  };
+  }, [logEvent]);
 
-  const logEvent = (message, type = 'INFO') => {
-    setEvents(prev => [{ time: new Date().toLocaleTimeString(), message, type }, ...prev].slice(0, 15));
-  };
+  // Baseline load
+  useEffect(() => {
+    let isMounted = true;
+    const payload = { fanLocation: { lat: 37.7760, lng: -122.4175 }, destinationSection: 'Sec 101', stadiumId: 'sim_1' };
+
+    getRecommendation(payload)
+      .then((rec) => {
+        if (!isMounted) {
+          return;
+        }
+
+        setRecommendation(rec);
+        setChartHistory((prev) => [...prev, { score: rec.safetyScore }].slice(-10));
+        logEvent('Baseline initialized', 'SUCCESS');
+      })
+      .catch(() => {
+        if (isMounted) {
+          logEvent('Failed to fetch recommendation: All gates might be unsafe.', 'ERROR');
+          setRecommendation(null);
+        }
+      })
+      .finally(() => {
+        if (isMounted) {
+          setLoading(false);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [logEvent]);
 
   const handleTriggerEvent = async (type, action, target) => {
     try {

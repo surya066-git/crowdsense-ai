@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Box, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, IconButton, Chip, CircularProgress } from '@mui/material';
 import { FiTrash2, FiFileText } from 'react-icons/fi';
 import { getUploadHistory, deleteUpload } from '../../services/uploadService.js';
-import { useSnackbar } from '../../contexts/AppSnackbarContext.jsx';
+import { useSnackbar } from '../../hooks/useSnackbar.js';
 import { formatTimeAgo } from '../../utils/timeFormatter.js';
 
 export function UploadHistory({ refreshTrigger }) {
@@ -23,8 +23,29 @@ export function UploadHistory({ refreshTrigger }) {
   };
 
   useEffect(() => {
-    fetchHistory();
-  }, [refreshTrigger]);
+    let isMounted = true;
+
+    getUploadHistory()
+      .then((res) => {
+        if (isMounted) {
+          setHistory(res.data || []);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          showSnackbar('Failed to fetch upload history', 'error');
+        }
+      })
+      .finally(() => {
+        if (isMounted) {
+          setLoading(false);
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [refreshTrigger, showSnackbar]);
 
   const handleDelete = async (id) => {
     try {

@@ -1,36 +1,48 @@
-# Use the official Node.js 20 Alpine image for a lightweight, secure footprint
+# ==============================================================================
+# STAGE 1: Dependency Builder
+# ==============================================================================
 FROM node:20-alpine AS builder
 
-# Set working directory
+# Set default work directory
 WORKDIR /usr/src/app
 
-# Copy package files
+# Copy package manifests
 COPY package*.json ./
 
-# Install ONLY production dependencies to minimize image size and attack surface
-RUN npm ci --only=production
+# Install only production dependencies (clean, fast, secure)
+RUN npm ci --omit=dev
 
-# Copy source code
-COPY . .
+# Copy application source code (node_modules is excluded by .dockerignore)
+COPY src/ ./src/
 
-# Multi-stage build: Final image
+# ==============================================================================
+# STAGE 2: Clean Production Image
+# ==============================================================================
 FROM node:20-alpine
 
-# Set Node environment to production
+# Set environment to production
 ENV NODE_ENV=production
-# Default port for Google Cloud Run
 ENV PORT=8080
 
 WORKDIR /usr/src/app
 
-# Copy built artifacts from the builder stage
-COPY --from=builder /usr/src/app /usr/src/app
+# Copy production dependencies and application files from the builder
+COPY --from=builder /usr/src/app/package*.json ./
+COPY --from=builder /usr/src/app/node_modules ./node_modules
+COPY --from=builder /usr/src/app/src ./src
 
-# Security: Run as a non-root user
+# Create application logs and uploads directory and ensure correct ownership
+RUN mkdir -p logs uploads && chown -R node:node /usr/src/app
+
+# Security: Run the container process under a non-privileged system user
 USER node
 
-# Expose the Cloud Run port
+# Expose port (Cloud Run defaults to routing traffic to 8080)
 EXPOSE 8080
 
-# Start the Node.js application
+# Production Healthcheck using Node.js native fetch (v20+)
+HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
+  CMD node -e "fetch('http://localhost:' + (process.env.PORT || 8080) + '/').then(r => r.ok ? process.exit(0) : process.exit(1)).catch(() => process.exit(1))"
+
+# Start the Express server
 CMD ["npm", "start"]
