@@ -49,3 +49,9 @@ graph TD
 ### 4. Gemini AI
 - **Role**: Translator and Explainer.
 - **Model**: `gemini-1.5-flash` for < 1000ms response times.
+
+### 5. Security & Persistence (Firebase SRE)
+- **Security Rules**: Strict `firebase.rules` and `storage.rules` block all client-side writes. Only the authenticated Cloud Run Node.js backend (Admin SDK) is permitted to mutate stadium states.
+- **Indexes**: `firestore.indexes.json` implements composite indexing to ensure $O(1)$ query speeds on recommendation history regardless of data size.
+- **Disaster Recovery**: All raw CSVs are preserved in Firebase Storage to allow instant rollback of corrupted stadium states, while Cloud Run traffic-splitting allows instant reversion of bad deployments.
+

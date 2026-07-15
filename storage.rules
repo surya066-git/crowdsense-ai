@@ -1,0 +1,20 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Only allow uploading CSV files for stadium data
+    match /uploads/stadium_data/{fileName} {
+      // Allow read access to everyone
+      allow read: if true;
+      
+      // Allow write ONLY if the file is a CSV and under 5MB
+      allow write: if request.resource.contentType == 'text/csv' 
+                   && request.resource.size < 5 * 1024 * 1024;
+    }
+
+    // Default deny
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

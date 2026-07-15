@@ -1,0 +1,21 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "recommendations_history",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "stadiumId", "order": "ASCENDING" },
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "recommendations_history",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "safetyScore", "order": "DESCENDING" },
+        { "fieldPath": "timestamp", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}
