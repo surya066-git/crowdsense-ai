@@ -1,0 +1,8 @@
+import { Router } from 'express';
+import { createPlaceholderController } from '../../controllers/placeholderController.js';
+
+const router = Router();
+
+router.get('/', createPlaceholderController('Gates'));
+
+export default router;

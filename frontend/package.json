@@ -1,0 +1,58 @@
+{
+  "name": "crowdsense-ai-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend foundation for CrowdSense AI, a fan-focused smart stadium decision support experience.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "crowdsense-ai",
+    "react",
+    "vite",
+    "material-ui",
+    "smart-stadium"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/inter": "^5.2.8",
+    "@mui/material": "^9.2.0",
+    "axios": "^1.18.1",
+    "chart.js": "^4.5.1",
+    "firebase": "^12.16.0",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.7",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.7",
+    "react-hook-form": "^7.81.0",
+    "react-icons": "^5.7.0",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@vitejs/plugin-react": "^6.0.3",
+    "eslint": "^10.7.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "prettier": "^3.9.5",
+    "vite": "^8.1.4"
+  }
+}

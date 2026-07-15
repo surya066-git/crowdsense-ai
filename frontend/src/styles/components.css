@@ -1,0 +1,73 @@
+.app-button {
+  white-space: nowrap;
+}
+
+.app-button-primary {
+  box-shadow: 0 12px 24px rgba(11, 95, 255, 0.18);
+}
+
+.app-button-secondary {
+  background: #ffffff;
+}
+
+.app-card {
+  height: 100%;
+}
+
+.app-card-content {
+  display: grid;
+  gap: 16px;
+  height: 100%;
+}
+
+.app-alert {
+  align-items: center;
+}
+
+.status-chip {
+  width: max-content;
+}
+
+.global-loader {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+.page-loader {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+}
+
+.skeleton-card {
+  min-height: 220px;
+}
+
+.feedback-state {
+  display: grid;
+  place-items: center;
+  max-width: 520px;
+  min-height: 360px;
+  margin: 0 auto;
+  gap: 16px;
+  text-align: center;
+}
+
+.feedback-state-icon {
+  width: 44px;
+  height: 44px;
+  color: #0b5fff;
+}
+
+.debug-error {
+  max-width: 760px;
+  margin: 24px auto 0;
+  padding: 16px;
+  overflow: auto;
+  color: #dc2626;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 8px;
+}

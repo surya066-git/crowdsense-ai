@@ -1,0 +1,193 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f6f8fb;
+}
+
+.app-navbar {
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(18px);
+}
+
+.app-navbar-toolbar {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 72px;
+  margin: 0 auto;
+  gap: 24px;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 10px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.brand-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #ffffff;
+  background: #0b5fff;
+  border-radius: 8px;
+}
+
+.brand-logo-text {
+  white-space: nowrap;
+}
+
+.app-navbar-links {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 6px;
+}
+
+.nav-link,
+.sidebar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  border-radius: 8px;
+  color: #4b5563;
+  font-size: 0.925rem;
+  font-weight: 600;
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    transform 160ms ease;
+}
+
+.nav-link {
+  padding: 0 12px;
+}
+
+.nav-link:hover,
+.sidebar-link:hover {
+  color: #0b5fff;
+  background: #e8f0ff;
+}
+
+.nav-link.active,
+.sidebar-link.active {
+  color: #0b5fff;
+  background: #e8f0ff;
+}
+
+.navbar-login-button {
+  flex-shrink: 0;
+}
+
+.app-body {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  width: 100%;
+  max-width: 1440px;
+  min-height: calc(100vh - 72px);
+  margin: 0 auto;
+}
+
+.app-sidebar {
+  position: sticky;
+  top: 72px;
+  height: calc(100vh - 72px);
+  padding: 24px 16px;
+  border-right: 1px solid #e5e7eb;
+}
+
+.sidebar-nav {
+  display: grid;
+  gap: 8px;
+}
+
+.sidebar-link {
+  padding: 0 14px;
+}
+
+.sidebar-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.app-footer {
+  margin-top: auto;
+  padding: 24px 32px 88px;
+  text-align: center;
+}
+
+.mobile-navigation {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  z-index: 1100;
+  display: none;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+@media (max-width: 1199px) {
+  .app-navbar-links,
+  .navbar-login-button {
+    display: none;
+  }
+
+  .app-body {
+    display: block;
+  }
+
+  .app-sidebar {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: block;
+  }
+
+  .page-container {
+    padding: 32px 20px;
+  }
+}
+
+@media (max-width: 599px) {
+  .app-navbar-toolbar {
+    min-height: 64px;
+  }
+
+  .brand-logo-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand-logo-text {
+    font-size: 0.95rem;
+  }
+
+  .page-container {
+    padding: 24px 16px;
+  }
+
+  .app-footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

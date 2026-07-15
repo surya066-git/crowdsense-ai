@@ -1,0 +1,69 @@
+openapi: 3.0.0
+info:
+  title: CrowdSense AI Recommendation API
+  version: 1.0.0
+  description: Deterministic AI Decision Engine for Gate Recommendations
+paths:
+  /api/v1/recommendations:
+    post:
+      summary: Get optimal gate recommendation
+      tags:
+        - Recommendations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - fanLocation
+                - destinationSection
+                - stadiumId
+              properties:
+                fanLocation:
+                  type: object
+                  properties:
+                    lat:
+                      type: number
+                      example: 37.7749
+                    lng:
+                      type: number
+                      example: -122.4194
+                destinationSection:
+                  type: string
+                  example: "Section 101"
+                stadiumId:
+                  type: string
+                  example: "stadium_sf_01"
+      responses:
+        '200':
+          description: Successful recommendation
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  data:
+                    type: object
+                    properties:
+                      recommendationId:
+                        type: string
+                      timestamp:
+                        type: string
+                        format: date-time
+                      bestGate:
+                        type: object
+                      alternativeGate:
+                        type: object
+                      safetyScore:
+                        type: number
+                      confidenceScore:
+                        type: number
+                      explainabilityMatrix:
+                        type: object
+        '400':
+          description: Invalid Request payload
+        '409':
+          description: All gates closed or unsafe
