@@ -1,10 +1,8 @@
 name: Production Deployment (CI/CD)
 
 on:
-  push:
-    branches:
-      - master
-  # Allow manual trigger of the deployment workflow (enables Rollback strategy)
+  # Manual production deploy. This workflow requires GitHub secrets for Firebase
+  # and Google Cloud; GitHub Pages handles automatic frontend deploys on push.
   workflow_dispatch:
     inputs:
       rollback_sha:
