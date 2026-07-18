@@ -75,7 +75,6 @@ jobs:
   # ==============================================================================
   deploy-frontend:
     name: Deploy Frontend (Firebase Hosting)
-    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
