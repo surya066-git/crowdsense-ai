@@ -14,6 +14,7 @@ const envSchema = Joi.object({
   FIREBASE_PROJECT_ID: Joi.string().allow('').optional(),
   FIREBASE_STORAGE_BUCKET: Joi.string().allow('').optional(),
   GOOGLE_APPLICATION_CREDENTIALS: Joi.string().allow('').optional(),
+  GEMINI_API_KEY: Joi.string().allow('').optional(),
   RATE_LIMIT_WINDOW_MS: Joi.number().integer().positive().default(900000),
   RATE_LIMIT_MAX_REQUESTS: Joi.number().integer().positive().default(100),
   UPLOAD_RATE_LIMIT_MAX_REQUESTS: Joi.number().integer().positive().default(20),
@@ -60,6 +61,9 @@ export const config = Object.freeze({
     projectId: env.FIREBASE_PROJECT_ID,
     storageBucket: env.FIREBASE_STORAGE_BUCKET,
     credentialsPath: env.GOOGLE_APPLICATION_CREDENTIALS,
+  },
+  gemini: {
+    apiKey: env.GEMINI_API_KEY,
   },
   logger: {
     level: env.LOG_LEVEL,

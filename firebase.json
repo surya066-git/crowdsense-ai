@@ -6,6 +6,11 @@
   "storage": {
     "rules": "storage.rules"
   },
+  "auth": {
+    "providers": {
+      "emailPassword": true
+    }
+  },
   "hosting": {
     "public": "frontend/dist",
     "ignore": [

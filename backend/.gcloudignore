@@ -1,0 +1,22 @@
+.gcloudignore
+.git
+.gitignore
+.dockerignore
+Dockerfile
+
+# Ignore node_modules because Cloud Build installs them during deployment
+node_modules/
+
+# Ignore tests, logs, docs, and environment variables
+tests/
+logs/
+docs/
+.env
+.env.*
+!*.example
+
+# Coverage and cache
+coverage/
+.nyc_output/
+.npm
+.cache

@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: crowdsense-backend
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: API_VERSION
+        value: v1
+      - key: FRONTEND_ORIGIN
+        sync: false # Requires manual input in Render dashboard (e.g. https://crowdsense-ai-prod.web.app)
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_STORAGE_BUCKET
+        sync: false
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        sync: false # Render free tier allows uploading secret files, or Firebase can be configured via service account JSON string if needed.
+      - key: GEMINI_API_KEY
+        sync: false # Requires manual input

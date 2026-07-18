@@ -1,8 +1,9 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import { config } from './env.js';
 
 // Determine API Key context. We won't crash the server if missing, 
 // as the application gracefully falls back to deterministic explanations.
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
+const GEMINI_API_KEY = config.gemini.apiKey || '';
 export const isGeminiConfigured = !!GEMINI_API_KEY;
 
 let genAI = null;
