@@ -3,6 +3,11 @@ import { env } from '../config/env.js';
 import { auth } from '../config/firebase.js';
 import { createRequestId } from '../utils/requestId.js';
 
+/**
+ * Axios instance configured for API requests.
+ * Automatically attaches authentication tokens and request IDs.
+ * Normalizes error responses for consistent handling.
+ */
 export const apiClient = axios.create({
   baseURL: env.apiBaseUrl,
   timeout: env.apiTimeoutMs,
@@ -13,7 +18,7 @@ export const apiClient = axios.create({
 
 apiClient.interceptors.request.use(async (config) => {
   config.headers['X-Request-Id'] = createRequestId();
-  
+
   if (auth?.currentUser) {
     try {
       const token = await auth.currentUser.getIdToken();

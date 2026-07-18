@@ -1,0 +1,507 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProblemSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-aidbym"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        The Problem
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Why attending a live match can sometimes feel like a hassle.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                  />
+                  <circle
+                    cx="9"
+                    cy="7"
+                    r="4"
+                  />
+                  <path
+                    d="M23 21v-2a4 4 0 0 0-3-3.87"
+                  />
+                  <path
+                    d="M16 3.13a4 4 0 0 1 0 7.75"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Crowded Gates
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Fans often face overwhelming crowds at popular entrances.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                  <polyline
+                    points="12 6 12 12 16 14"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Long Waiting
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Waiting times can exceed 45 minutes during peak hours.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+                  />
+                  <line
+                    x1="8"
+                    x2="8"
+                    y1="2"
+                    y2="18"
+                  />
+                  <line
+                    x1="16"
+                    x2="16"
+                    y1="6"
+                    y2="22"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Wrong Route
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Confusing navigation leads to getting lost in the stadium.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="9"
+                    y2="13"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="17"
+                    y2="17"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Safety Issues
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                High density increases the risk of stampedes and incidents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProblemSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-aidbym"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        The Problem
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Why attending a live match can sometimes feel like a hassle.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+                  />
+                  <circle
+                    cx="9"
+                    cy="7"
+                    r="4"
+                  />
+                  <path
+                    d="M23 21v-2a4 4 0 0 0-3-3.87"
+                  />
+                  <path
+                    d="M16 3.13a4 4 0 0 1 0 7.75"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Crowded Gates
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Fans often face overwhelming crowds at popular entrances.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                  <polyline
+                    points="12 6 12 12 16 14"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Long Waiting
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Waiting times can exceed 45 minutes during peak hours.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+                  />
+                  <line
+                    x1="8"
+                    x2="8"
+                    y1="2"
+                    y2="18"
+                  />
+                  <line
+                    x1="16"
+                    x2="16"
+                    y1="6"
+                    y2="22"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Wrong Route
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Confusing navigation leads to getting lost in the stadium.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-11xm2tg-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-1casv0q-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-16wxwek"
+              >
+                <svg
+                  fill="none"
+                  height="28"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="9"
+                    y2="13"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="17"
+                    y2="17"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Safety Issues
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                High density increases the risk of stampedes and incidents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

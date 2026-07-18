@@ -1,5 +1,18 @@
 import { useEffect, useState } from 'react';
-import { Box, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, IconButton, Chip, CircularProgress } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  IconButton,
+  Chip,
+  CircularProgress,
+} from '@mui/material';
 import { FiTrash2, FiFileText } from 'react-icons/fi';
 import { getUploadHistory, deleteUpload } from '../../services/uploadService.js';
 import { useSnackbar } from '../../hooks/useSnackbar.js';
@@ -58,11 +71,14 @@ export function UploadHistory({ refreshTrigger }) {
   };
 
   return (
-    <Paper elevation={0} sx={{ p: 4, borderRadius: 4, border: (theme) => `1px solid ${theme.palette.divider}` }}>
+    <Paper
+      elevation={0}
+      sx={{ p: 4, borderRadius: 4, border: (theme) => `1px solid ${theme.palette.divider}` }}
+    >
       <Typography variant="h6" fontWeight={600} gutterBottom>
         Recent Uploads
       </Typography>
-      
+
       {loading ? (
         <Box sx={{ display: 'flex', justifyContent: 'center', p: 4 }}>
           <CircularProgress />
@@ -88,15 +104,17 @@ export function UploadHistory({ refreshTrigger }) {
                   <TableCell>
                     <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
                       <FiFileText color="#757575" />
-                      <Typography variant="body2" fontWeight={500}>{row.fileName}</Typography>
+                      <Typography variant="body2" fontWeight={500}>
+                        {row.fileName}
+                      </Typography>
                     </Box>
                   </TableCell>
                   <TableCell>
-                    <Chip 
-                      label={row.status} 
-                      size="small" 
-                      color={row.status === 'SUCCESS' ? 'success' : 'error'} 
-                      variant="outlined" 
+                    <Chip
+                      label={row.status}
+                      size="small"
+                      color={row.status === 'SUCCESS' ? 'success' : 'error'}
+                      variant="outlined"
                     />
                   </TableCell>
                   <TableCell>
@@ -105,7 +123,7 @@ export function UploadHistory({ refreshTrigger }) {
                     </Typography>
                   </TableCell>
                   <TableCell align="right">
-                    <IconButton size="small" color="error" onClick={() => handleDelete(row.id)}>
+                    <IconButton aria-label="Delete entry" size="small" color="error" onClick={() => handleDelete(row.id)}>
                       <FiTrash2 />
                     </IconButton>
                   </TableCell>

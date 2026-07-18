@@ -1,0 +1,359 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar Component > matches snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 MuiAppBar-root MuiAppBar-colorInherit MuiAppBar-positionSticky app-navbar css-1vf72z3-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular app-navbar-toolbar css-yg49xf-MuiToolbar-root"
+    >
+      <a
+        aria-label="CrowdSense AI home"
+        class="brand-logo"
+        data-discover="true"
+        href="/"
+      >
+        <span
+          class="brand-logo-mark"
+        >
+          <svg
+            aria-hidden="true"
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="3 11 22 2 13 21 11 13 3 11"
+            />
+          </svg>
+        </span>
+        <span
+          class="brand-logo-text"
+        >
+          CrowdSense AI
+        </span>
+      </a>
+      <div
+        aria-label="Primary navigation"
+        class="MuiBox-root css-n9lluf"
+      >
+        <a
+          aria-current="page"
+          class="nav-link active"
+          data-discover="true"
+          href="/"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          Home
+        </a>
+        <a
+          class="nav-link"
+          href="#features"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          Features
+        </a>
+        <a
+          class="nav-link"
+          href="#how-it-works"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          How It Works
+        </a>
+        <a
+          class="nav-link"
+          data-discover="true"
+          href="/about"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          About
+        </a>
+        <a
+          class="nav-link"
+          href="https://github.com"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 4px; font-weight: 600;"
+          target="_blank"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+           GitHub
+        </a>
+      </div>
+      <div
+        class="MuiBox-root css-huskxe"
+      >
+        <a
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeMedium MuiButton-colorPrimary navbar-login-button css-1se5w6i-MuiButtonBase-root-MuiButton-root"
+          data-discover="true"
+          href="/login"
+          tabindex="0"
+        >
+          <span
+            class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+              />
+              <polyline
+                points="10 17 15 12 10 7"
+              />
+              <line
+                x1="15"
+                x2="3"
+                y1="12"
+                y2="12"
+              />
+            </svg>
+          </span>
+          Login
+        </a>
+        <a
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary app-button app-button-primary css-74d805-MuiButtonBase-root-MuiButton-root"
+          data-discover="true"
+          href="/recommendation"
+          tabindex="0"
+        >
+          Start Demo
+          <span
+            class="MuiButton-icon MuiButton-endIcon css-1gulhci-MuiButton-endIcon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="5"
+                x2="19"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 5 19 12 12 19"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Navbar Component matches snapshot 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation1 MuiAppBar-root MuiAppBar-colorInherit MuiAppBar-positionSticky app-navbar css-1vf72z3-MuiPaper-root-MuiAppBar-root"
+    style="--Paper-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular app-navbar-toolbar css-yg49xf-MuiToolbar-root"
+    >
+      <a
+        aria-label="CrowdSense AI home"
+        class="brand-logo"
+        data-discover="true"
+        href="/"
+      >
+        <span
+          class="brand-logo-mark"
+        >
+          <svg
+            aria-hidden="true"
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <polygon
+              points="3 11 22 2 13 21 11 13 3 11"
+            />
+          </svg>
+        </span>
+        <span
+          class="brand-logo-text"
+        >
+          CrowdSense AI
+        </span>
+      </a>
+      <div
+        aria-label="Primary navigation"
+        class="MuiBox-root css-n9lluf"
+      >
+        <a
+          aria-current="page"
+          class="nav-link active"
+          data-discover="true"
+          href="/"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          Home
+        </a>
+        <a
+          class="nav-link"
+          href="#features"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          Features
+        </a>
+        <a
+          class="nav-link"
+          href="#how-it-works"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          How It Works
+        </a>
+        <a
+          class="nav-link"
+          data-discover="true"
+          href="/about"
+          style="text-decoration: none; color: inherit; font-weight: 600;"
+        >
+          About
+        </a>
+        <a
+          class="nav-link"
+          href="https://github.com"
+          rel="noopener noreferrer"
+          style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 4px; font-weight: 600;"
+          target="_blank"
+        >
+          <svg
+            fill="none"
+            height="1em"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+            />
+          </svg>
+           GitHub
+        </a>
+      </div>
+      <div
+        class="MuiBox-root css-huskxe"
+      >
+        <a
+          class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeMedium MuiButton-colorPrimary navbar-login-button css-1se5w6i-MuiButtonBase-root-MuiButton-root"
+          data-discover="true"
+          href="/login"
+          tabindex="0"
+        >
+          <span
+            class="MuiButton-icon MuiButton-startIcon css-1lxyhll-MuiButton-startIcon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"
+              />
+              <polyline
+                points="10 17 15 12 10 7"
+              />
+              <line
+                x1="15"
+                x2="3"
+                y1="12"
+                y2="12"
+              />
+            </svg>
+          </span>
+          Login
+        </a>
+        <a
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary app-button app-button-primary css-74d805-MuiButtonBase-root-MuiButton-root"
+          data-discover="true"
+          href="/recommendation"
+          tabindex="0"
+        >
+          Start Demo
+          <span
+            class="MuiButton-icon MuiButton-endIcon css-1gulhci-MuiButton-endIcon"
+          >
+            <svg
+              fill="none"
+              height="1em"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line
+                x1="5"
+                x2="19"
+                y1="12"
+                y2="12"
+              />
+              <polyline
+                points="12 5 19 12 12 19"
+              />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+</div>
+`;

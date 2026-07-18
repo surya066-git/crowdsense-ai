@@ -1,0 +1,217 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeroSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-115xjbz"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiStack-root css-140bjnd-MuiStack-root"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h2 css-1qay9ii-MuiTypography-root"
+        >
+          Smart Stadium Experience Powered by AI
+        </h1>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-es482h-MuiTypography-root"
+        >
+          CrowdSense AI helps fans navigate crowded stadiums with real-time intelligence, ensuring safe entry, optimized routes, and zero waiting time.
+        </h6>
+        <div
+          class="MuiStack-root css-w7gobd-MuiStack-root"
+        >
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorPrimary css-1n8nwl0-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/recommendation"
+            tabindex="0"
+          >
+            Start Demo
+            <span
+              class="MuiButton-icon MuiButton-endIcon css-3155yg-MuiButton-endIcon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="5"
+                  x2="19"
+                  y1="12"
+                  y2="12"
+                />
+                <polyline
+                  points="12 5 19 12 12 19"
+                />
+              </svg>
+            </span>
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorPrimary css-1fgesbv-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/about"
+            tabindex="0"
+          >
+            <span
+              class="MuiButton-icon MuiButton-startIcon css-1d1erjx-MuiButton-startIcon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <polygon
+                  points="10 8 16 12 10 16 10 8"
+                />
+              </svg>
+            </span>
+            Learn More
+          </a>
+        </div>
+        <div
+          class="MuiBox-root css-f5d9vo"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-1aso48g-MuiTypography-root"
+          >
+            [ AI Dashboard Illustration Placeholder ]
+          </h5>
+          <div
+            class="MuiBox-root css-ed85yh"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HeroSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-115xjbz"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiStack-root css-140bjnd-MuiStack-root"
+      >
+        <h1
+          class="MuiTypography-root MuiTypography-h2 css-1qay9ii-MuiTypography-root"
+        >
+          Smart Stadium Experience Powered by AI
+        </h1>
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-es482h-MuiTypography-root"
+        >
+          CrowdSense AI helps fans navigate crowded stadiums with real-time intelligence, ensuring safe entry, optimized routes, and zero waiting time.
+        </h6>
+        <div
+          class="MuiStack-root css-w7gobd-MuiStack-root"
+        >
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorPrimary css-1n8nwl0-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/recommendation"
+            tabindex="0"
+          >
+            Start Demo
+            <span
+              class="MuiButton-icon MuiButton-endIcon css-3155yg-MuiButton-endIcon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="5"
+                  x2="19"
+                  y1="12"
+                  y2="12"
+                />
+                <polyline
+                  points="12 5 19 12 12 19"
+                />
+              </svg>
+            </span>
+          </a>
+          <a
+            class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorPrimary css-1fgesbv-MuiButtonBase-root-MuiButton-root"
+            data-discover="true"
+            href="/about"
+            tabindex="0"
+          >
+            <span
+              class="MuiButton-icon MuiButton-startIcon css-1d1erjx-MuiButton-startIcon"
+            >
+              <svg
+                fill="none"
+                height="1em"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                />
+                <polygon
+                  points="10 8 16 12 10 16 10 8"
+                />
+              </svg>
+            </span>
+            Learn More
+          </a>
+        </div>
+        <div
+          class="MuiBox-root css-f5d9vo"
+        >
+          <h5
+            class="MuiTypography-root MuiTypography-h5 css-1aso48g-MuiTypography-root"
+          >
+            [ AI Dashboard Illustration Placeholder ]
+          </h5>
+          <div
+            class="MuiBox-root css-ed85yh"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

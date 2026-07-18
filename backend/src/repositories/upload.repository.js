@@ -9,16 +9,16 @@ export const saveUploadMetadata = async (metadata) => {
     const db = getFirestore();
     const id = uuidv4();
     const docRef = db.collection(COLLECTION_NAME).doc(id);
-    
+
     const data = {
       id,
       ...metadata,
-      createdAt: new Date().toISOString()
+      createdAt: new Date().toISOString(),
     };
-    
+
     await docRef.set(data);
     logger.info(`Upload metadata saved to Firestore with ID: ${id}`);
-    
+
     return data;
   } catch (error) {
     logger.error('Error saving upload metadata:', error);
@@ -29,13 +29,17 @@ export const saveUploadMetadata = async (metadata) => {
 export const getUploadHistory = async () => {
   try {
     const db = getFirestore();
-    const snapshot = await db.collection(COLLECTION_NAME).orderBy('createdAt', 'desc').limit(20).get();
-    
+    const snapshot = await db
+      .collection(COLLECTION_NAME)
+      .orderBy('createdAt', 'desc')
+      .limit(20)
+      .get();
+
     if (snapshot.empty) {
       return [];
     }
-    
-    return snapshot.docs.map(doc => doc.data());
+
+    return snapshot.docs.map((doc) => doc.data());
   } catch (error) {
     logger.error('Error fetching upload history:', error);
     throw new Error('Database operation failed');

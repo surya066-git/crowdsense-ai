@@ -1,13 +1,15 @@
+/* eslint-disable react-refresh/only-export-components */
+import { lazy } from 'react';
 import { ROUTE_PATHS } from '../constants/appConstants.js';
-import HomePage from '../pages/HomePage.jsx';
-import UploadPage from '../pages/UploadPage.jsx';
-import MapPage from '../pages/MapPage.jsx';
-import RecommendationPage from '../pages/RecommendationPage.jsx';
-import SimulationPage from '../pages/SimulationPage.jsx';
-import HistoryPage from '../pages/HistoryPage.jsx';
-import AboutPage from '../pages/AboutPage.jsx';
-import LoginPage from '../pages/LoginPage.jsx';
 
+const HomePage = lazy(() => import('../pages/HomePage.jsx'));
+const UploadPage = lazy(() => import('../pages/UploadPage.jsx'));
+const MapPage = lazy(() => import('../pages/MapPage.jsx'));
+const RecommendationPage = lazy(() => import('../pages/RecommendationPage.jsx'));
+const SimulationPage = lazy(() => import('../pages/SimulationPage.jsx'));
+const HistoryPage = lazy(() => import('../pages/HistoryPage.jsx'));
+const AboutPage = lazy(() => import('../pages/AboutPage.jsx'));
+const LoginPage = lazy(() => import('../pages/LoginPage.jsx'));
 export const publicRoutes = Object.freeze([
   {
     path: ROUTE_PATHS.HOME,

@@ -1,5 +1,14 @@
 import { useState, useRef } from 'react';
-import { Box, Typography, Button, Paper, LinearProgress, Stack, Alert, useTheme } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Button,
+  Paper,
+  LinearProgress,
+  Stack,
+  Alert,
+  useTheme,
+} from '@mui/material';
 import { FiUploadCloud, FiFile, FiCheckCircle, FiXCircle, FiRefreshCw } from 'react-icons/fi';
 import { uploadFile } from '../../services/uploadService.js';
 
@@ -25,10 +34,12 @@ export function UploadCard({ onUploadSuccess }) {
   const validateFile = (selectedFile) => {
     const validNames = ['crowd.csv', 'gates.csv', 'incidents.csv', 'weather.json'];
     if (!validNames.includes(selectedFile.name)) {
+      setStatus('ERROR');
       setErrorMessage(`Invalid file. Please upload one of: ${validNames.join(', ')}`);
       return false;
     }
     if (selectedFile.size > 10 * 1024 * 1024) {
+      setStatus('ERROR');
       setErrorMessage('File size exceeds 10MB limit.');
       return false;
     }
@@ -88,11 +99,16 @@ export function UploadCard({ onUploadSuccess }) {
   };
 
   return (
-    <Paper elevation={0} sx={{ p: 4, borderRadius: 4, border: `1px solid ${theme.palette.divider}` }}>
+    <Paper
+      elevation={0}
+      sx={{ p: 4, borderRadius: 4, border: `1px solid ${theme.palette.divider}` }}
+    >
       {status === 'SUCCESS' ? (
         <Stack spacing={3} sx={{ alignItems: 'center', textAlign: 'center', py: 4 }}>
           <FiCheckCircle size={64} color={theme.palette.success.main} />
-          <Typography variant="h5" fontWeight={700}>Upload Successful!</Typography>
+          <Typography variant="h5" fontWeight={700}>
+            Upload Successful!
+          </Typography>
           <Typography color="text.secondary">The dataset has been parsed and stored.</Typography>
           <Button variant="outlined" onClick={resetUpload} startIcon={<FiRefreshCw />}>
             Upload Another File
@@ -123,8 +139,8 @@ export function UploadCard({ onUploadSuccess }) {
               transition: 'all 0.2s ease',
               '&:hover': {
                 bgcolor: 'primary.50',
-                borderColor: 'primary.main'
-              }
+                borderColor: 'primary.main',
+              },
             }}
           >
             <input
@@ -161,22 +177,37 @@ export function UploadCard({ onUploadSuccess }) {
           {status === 'UPLOADING' && (
             <Box sx={{ mt: 3 }}>
               <Stack direction="row" sx={{ justifyContent: 'space-between' }} mb={1}>
-                <Typography variant="body2" fontWeight={600}>Uploading {file?.name}...</Typography>
+                <Typography variant="body2" fontWeight={600}>
+                  Uploading {file?.name}...
+                </Typography>
                 <Typography variant="body2">{progress}%</Typography>
               </Stack>
-              <LinearProgress variant="determinate" value={progress} sx={{ height: 8, borderRadius: 4 }} />
+              <LinearProgress
+                variant="determinate"
+                value={progress}
+                sx={{ height: 8, borderRadius: 4 }}
+              />
             </Box>
           )}
 
           <Stack direction="row" spacing={2} mt={4} sx={{ justifyContent: 'flex-end' }}>
             {file && status !== 'UPLOADING' && (
-              <Button color="inherit" onClick={(e) => { e.stopPropagation(); resetUpload(); }}>
+              <Button
+                color="inherit"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  resetUpload();
+                }}
+              >
                 Cancel
               </Button>
             )}
             <Button
               variant="contained"
-              onClick={(e) => { e.stopPropagation(); handleUpload(); }}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleUpload();
+              }}
               disabled={!file || status === 'UPLOADING'}
               sx={{ px: 4, borderRadius: '50px' }}
             >

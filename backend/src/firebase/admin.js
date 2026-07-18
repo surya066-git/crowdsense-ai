@@ -10,9 +10,9 @@ let firebaseApp = null;
 export const hasFirebaseAdminCredentials = () =>
   Boolean(
     config.firebase.credentialsPath ||
-      process.env.GOOGLE_APPLICATION_CREDENTIALS ||
-      process.env.K_SERVICE ||
-      process.env.GAE_SERVICE,
+    process.env.GOOGLE_APPLICATION_CREDENTIALS ||
+    process.env.K_SERVICE ||
+    process.env.GAE_SERVICE,
   );
 
 const getInlineCredential = () => {

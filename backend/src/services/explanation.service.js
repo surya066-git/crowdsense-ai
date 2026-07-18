@@ -11,14 +11,14 @@ export const generateExplanation = async (recommendationData) => {
       explanation: 'All gates are currently closed or marked unsafe due to incidents.',
       alternative: null,
       safetyTips: ['Await stadium announcements.', 'Do not approach closed gates.'],
-      riskLevel: 'HIGH'
+      riskLevel: 'HIGH',
     };
   }
 
   try {
     const systemPrompt = buildSystemPrompt();
     const userPrompt = buildUserPrompt(recommendationData);
-    
+
     const explanationJson = await callGeminiAPI(systemPrompt, userPrompt);
     return explanationJson;
   } catch (error) {

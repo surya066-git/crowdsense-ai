@@ -1,13 +1,6 @@
 import { Box, Container, Stack, Typography, Chip, useTheme } from '@mui/material';
 
-const techStack = [
-  'React',
-  'Node.js',
-  'Firebase',
-  'Google Gemini AI',
-  'Leaflet',
-  'Material UI'
-];
+const techStack = ['React', 'Node.js', 'Firebase', 'Google Gemini AI', 'Leaflet', 'Material UI'];
 
 export function TechStackSection() {
   const theme = useTheme();
@@ -21,23 +14,24 @@ export function TechStackSection() {
           Built for scale, speed, and real-time intelligence.
         </Typography>
 
-        <Stack 
-          direction="row" 
-          spacing={2} 
-          useFlexGap sx={{ flexWrap: 'wrap',  justifyContent: 'center' }}
+        <Stack
+          direction="row"
+          spacing={2}
+          useFlexGap
+          sx={{ flexWrap: 'wrap', justifyContent: 'center' }}
         >
           {techStack.map((tech, index) => (
-            <Chip 
-              key={index} 
-              label={tech} 
-              sx={{ 
-                bgcolor: 'rgba(255, 255, 255, 0.1)', 
-                color: 'white', 
+            <Chip
+              key={index}
+              label={tech}
+              sx={{
+                bgcolor: 'rgba(255, 255, 255, 0.1)',
+                color: 'white',
                 fontSize: '1rem',
                 py: 2,
                 px: 1,
-                border: `1px solid rgba(255, 255, 255, 0.2)`
-              }} 
+                border: `1px solid rgba(255, 255, 255, 0.2)`,
+              }}
             />
           ))}
         </Stack>

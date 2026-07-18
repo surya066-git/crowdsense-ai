@@ -31,24 +31,27 @@ files.forEach((file) => {
   // We'll just do a very simple and safe regex for the specific lines we found.
   const propsToMove = ['alignItems', 'textAlign', 'justifyContent', 'flexWrap'];
 
-  propsToMove.forEach(prop => {
+  propsToMove.forEach((prop) => {
     const regex = new RegExp(`\\s+${prop}="([^"]+)"`, 'g');
-    
+
     // Find all tags that have this prop
-    content = content.replace(new RegExp(`(<[A-Z][a-zA-Z]*[^>]*?)\\s+${prop}="([^"]+)"([^>]*>)`, 'g'), (match, before, value, after) => {
-      // Check if there is already an sx={{ ... }}
-      if (before.includes('sx={{') || after.includes('sx={{')) {
-        // Complex, we will just add it if possible, or skip
-        // Safer to just append to sx.
-        if (after.match(/sx=\{\{/)) {
-           return before + after.replace(/sx=\{\{/, `sx={{ ${prop}: '${value}', `);
-        } else if (before.match(/sx=\{\{/)) {
-           return before.replace(/sx=\{\{/, `sx={{ ${prop}: '${value}', `) + after;
+    content = content.replace(
+      new RegExp(`(<[A-Z][a-zA-Z]*[^>]*?)\\s+${prop}="([^"]+)"([^>]*>)`, 'g'),
+      (match, before, value, after) => {
+        // Check if there is already an sx={{ ... }}
+        if (before.includes('sx={{') || after.includes('sx={{')) {
+          // Complex, we will just add it if possible, or skip
+          // Safer to just append to sx.
+          if (after.match(/sx=\{\{/)) {
+            return before + after.replace(/sx=\{\{/, `sx={{ ${prop}: '${value}', `);
+          } else if (before.match(/sx=\{\{/)) {
+            return before.replace(/sx=\{\{/, `sx={{ ${prop}: '${value}', `) + after;
+          }
         }
-      }
-      // No sx found, create one
-      return `${before} sx={{ ${prop}: '${value}' }}${after}`;
-    });
+        // No sx found, create one
+        return `${before} sx={{ ${prop}: '${value}' }}${after}`;
+      },
+    );
   });
 
   if (content !== original) {

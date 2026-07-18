@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AppDialog Component > matches snapshot 1`] = `<div />`;
+
+exports[`AppDialog Component matches snapshot 1`] = `<div />`;

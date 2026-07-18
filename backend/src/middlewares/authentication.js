@@ -8,6 +8,7 @@ const getBearerToken = (authorizationHeader = '') => {
 };
 
 export const authenticate = asyncHandler(async (req, _res, next) => {
+
   const token = getBearerToken(req.headers.authorization);
 
   if (!token) {

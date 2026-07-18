@@ -1,6 +1,11 @@
 import { generateDecision } from '../engine/decisionEngine.js';
 import { saveRecommendationHistory } from '../repositories/recommendation.repository.js';
-import { getGatesData, getCrowdDensityZones, getIncidentsData, getWeatherData } from './map.service.js';
+import {
+  getGatesData,
+  getCrowdDensityZones,
+  getIncidentsData,
+  getWeatherData,
+} from './map.service.js';
 import { generateExplanation } from './explanation.service.js';
 
 export const processRecommendation = async (fanLocation, destinationSection, stadiumId, userId) => {
@@ -9,7 +14,7 @@ export const processRecommendation = async (fanLocation, destinationSection, sta
     getGatesData(),
     getCrowdDensityZones(),
     getIncidentsData(),
-    getWeatherData()
+    getWeatherData(),
   ]);
 
   const stadiumData = { gates, crowd, incidents, weather };
@@ -23,11 +28,11 @@ export const processRecommendation = async (fanLocation, destinationSection, sta
 
   // Generate natural language explanation using Gemini (or fallback)
   const explanation = await generateExplanation(recommendation);
-  
+
   // Attach explanation to the recommendation payload
   const finalRecommendation = {
     ...recommendation,
-    explanation
+    explanation,
   };
 
   // Fire and forget storage

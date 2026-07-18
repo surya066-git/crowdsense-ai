@@ -6,7 +6,14 @@ export const AppAlert = forwardRef(function AppAlert(
   ref,
 ) {
   return (
-    <Alert ref={ref} className="app-alert" severity={severity} variant="filled" onClose={onClose} {...props}>
+    <Alert
+      ref={ref}
+      className="app-alert"
+      severity={severity}
+      variant="filled"
+      onClose={onClose}
+      {...props}
+    >
       {children}
     </Alert>
   );

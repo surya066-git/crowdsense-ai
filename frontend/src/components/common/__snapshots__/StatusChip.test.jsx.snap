@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StatusChip Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault status-chip css-fcxqx9-MuiChip-root"
+  >
+    <span
+      class="MuiChip-label css-eccknh-MuiChip-label"
+    >
+      Pending
+    </span>
+  </div>
+</div>
+`;
+
+exports[`StatusChip Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault status-chip css-fcxqx9-MuiChip-root"
+  >
+    <span
+      class="MuiChip-label css-eccknh-MuiChip-label"
+    >
+      Pending
+    </span>
+  </div>
+</div>
+`;

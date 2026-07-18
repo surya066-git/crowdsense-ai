@@ -1,0 +1,591 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WhyUsSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-13g25so"
+    id="about"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-8 css-17gq5zh-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="5"
+          xs="12"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-uynfxu-MuiTypography-root"
+            font-weight="700"
+          >
+            Why CrowdSense AI?
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 css-1i3tsf3-MuiTypography-root"
+            mb="4"
+          >
+            We are redefining the stadium experience by putting intelligent decision-support directly into the hands of fans.
+          </h6>
+          <div
+            class="MuiStack-root css-v2woy3-MuiStack-root"
+          >
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Save Time
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  No more waiting in massive queues at the wrong gate.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Avoid Crowds
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  Real-time density tracking keeps you away from bottlenecks.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Safe Entry
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  Prioritize safety with intelligent routing during emergencies.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  AI Powered
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  State-of-the-art predictive models personalize your experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="7"
+          xs="12"
+        >
+          <div
+            class="MuiBox-root css-ab4vnv"
+          >
+            <div
+              class="MuiBox-root css-1ft611r"
+            >
+              <div
+                class="MuiBox-root css-h5d9c4"
+              />
+              <div
+                class="MuiBox-root css-140l2v9"
+              />
+              <div
+                class="MuiBox-root css-hxlzvo"
+              />
+              <div
+                class="MuiBox-root css-1efnu1n"
+              >
+                <svg
+                  color="#1976d2"
+                  fill="none"
+                  height="48"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  style="color: rgb(25, 118, 210);"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="16"
+                    rx="2"
+                    ry="2"
+                    width="16"
+                    x="4"
+                    y="4"
+                  />
+                  <rect
+                    height="6"
+                    width="6"
+                    x="9"
+                    y="9"
+                  />
+                  <line
+                    x1="9"
+                    x2="9"
+                    y1="1"
+                    y2="4"
+                  />
+                  <line
+                    x1="15"
+                    x2="15"
+                    y1="1"
+                    y2="4"
+                  />
+                  <line
+                    x1="9"
+                    x2="9"
+                    y1="20"
+                    y2="23"
+                  />
+                  <line
+                    x1="15"
+                    x2="15"
+                    y1="20"
+                    y2="23"
+                  />
+                  <line
+                    x1="20"
+                    x2="23"
+                    y1="9"
+                    y2="9"
+                  />
+                  <line
+                    x1="20"
+                    x2="23"
+                    y1="14"
+                    y2="14"
+                  />
+                  <line
+                    x1="1"
+                    x2="4"
+                    y1="9"
+                    y2="9"
+                  />
+                  <line
+                    x1="1"
+                    x2="4"
+                    y1="14"
+                    y2="14"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WhyUsSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-13g25so"
+    id="about"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-8 css-17gq5zh-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="5"
+          xs="12"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-uynfxu-MuiTypography-root"
+            font-weight="700"
+          >
+            Why CrowdSense AI?
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 css-1i3tsf3-MuiTypography-root"
+            mb="4"
+          >
+            We are redefining the stadium experience by putting intelligent decision-support directly into the hands of fans.
+          </h6>
+          <div
+            class="MuiStack-root css-v2woy3-MuiStack-root"
+          >
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Save Time
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  No more waiting in massive queues at the wrong gate.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Avoid Crowds
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  Real-time density tracking keeps you away from bottlenecks.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  Safe Entry
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  Prioritize safety with intelligent routing during emergencies.
+                </p>
+              </div>
+            </div>
+            <div
+              class="MuiStack-root css-1h9mz9o-MuiStack-root"
+            >
+              <div
+                class="MuiBox-root css-7aqr7m"
+              >
+                <svg
+                  fill="none"
+                  height="20"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="20 6 9 17 4 12"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2 css-1ypmsg6-MuiTypography-root"
+                  font-weight="700"
+                >
+                  AI Powered
+                </h6>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+                >
+                  State-of-the-art predictive models personalize your experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="7"
+          xs="12"
+        >
+          <div
+            class="MuiBox-root css-ab4vnv"
+          >
+            <div
+              class="MuiBox-root css-1ft611r"
+            >
+              <div
+                class="MuiBox-root css-h5d9c4"
+              />
+              <div
+                class="MuiBox-root css-140l2v9"
+              />
+              <div
+                class="MuiBox-root css-hxlzvo"
+              />
+              <div
+                class="MuiBox-root css-1efnu1n"
+              >
+                <svg
+                  color="#1976d2"
+                  fill="none"
+                  height="48"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  style="color: rgb(25, 118, 210);"
+                  viewBox="0 0 24 24"
+                  width="48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    height="16"
+                    rx="2"
+                    ry="2"
+                    width="16"
+                    x="4"
+                    y="4"
+                  />
+                  <rect
+                    height="6"
+                    width="6"
+                    x="9"
+                    y="9"
+                  />
+                  <line
+                    x1="9"
+                    x2="9"
+                    y1="1"
+                    y2="4"
+                  />
+                  <line
+                    x1="15"
+                    x2="15"
+                    y1="1"
+                    y2="4"
+                  />
+                  <line
+                    x1="9"
+                    x2="9"
+                    y1="20"
+                    y2="23"
+                  />
+                  <line
+                    x1="15"
+                    x2="15"
+                    y1="20"
+                    y2="23"
+                  />
+                  <line
+                    x1="20"
+                    x2="23"
+                    y1="9"
+                    y2="9"
+                  />
+                  <line
+                    x1="20"
+                    x2="23"
+                    y1="14"
+                    y2="14"
+                  />
+                  <line
+                    x1="1"
+                    x2="4"
+                    y1="9"
+                    y2="9"
+                  />
+                  <line
+                    x1="1"
+                    x2="4"
+                    y1="14"
+                    y2="14"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

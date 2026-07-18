@@ -14,11 +14,9 @@ export const callGeminiAPI = async (systemInstruction, promptText) => {
   try {
     // Generate content using the new SDK format
     const result = await model.generateContent({
-      contents: [
-        { role: 'user', parts: [{ text: `${systemInstruction}\n\n${promptText}` }] }
-      ]
+      contents: [{ role: 'user', parts: [{ text: `${systemInstruction}\n\n${promptText}` }] }],
     });
-    
+
     const responseText = result.response.text();
     return JSON.parse(responseText);
   } catch (error) {

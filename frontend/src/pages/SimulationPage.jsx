@@ -22,29 +22,42 @@ export default function SimulationPage() {
   const [notification, setNotification] = useState({ open: false, message: '', severity: 'info' });
 
   const logEvent = useCallback((message, type = 'INFO') => {
-    setEvents((prev) => [{ time: new Date().toLocaleTimeString(), message, type }, ...prev].slice(0, 15));
+    setEvents((prev) =>
+      [{ time: new Date().toLocaleTimeString(), message, type }, ...prev].slice(0, 15),
+    );
   }, []);
 
-  const fetchLatestRecommendation = useCallback(async (reason) => {
-    setLoading(true);
-    try {
-      const payload = { fanLocation: { lat: 37.7760, lng: -122.4175 }, destinationSection: 'Sec 101', stadiumId: 'sim_1' };
-      const rec = await getRecommendation(payload);
-      setRecommendation(rec);
-      setChartHistory((prev) => [...prev, { score: rec.safetyScore }].slice(-10));
-      logEvent(reason, 'SUCCESS');
-    } catch (err) {
-      logEvent('Failed to fetch recommendation: All gates might be unsafe.', 'ERROR');
-      setRecommendation(null);
-    } finally {
-      setLoading(false);
-    }
-  }, [logEvent]);
+  const fetchLatestRecommendation = useCallback(
+    async (reason) => {
+      setLoading(true);
+      try {
+        const payload = {
+          fanLocation: { lat: 37.776, lng: -122.4175 },
+          destinationSection: 'Sec 101',
+          stadiumId: 'sim_1',
+        };
+        const rec = await getRecommendation(payload);
+        setRecommendation(rec);
+        setChartHistory((prev) => [...prev, { score: rec.safetyScore }].slice(-10));
+        logEvent(reason, 'SUCCESS');
+      } catch (err) {
+        logEvent('Failed to fetch recommendation: All gates might be unsafe.', 'ERROR');
+        setRecommendation(null);
+      } finally {
+        setLoading(false);
+      }
+    },
+    [logEvent],
+  );
 
   // Baseline load
   useEffect(() => {
     let isMounted = true;
-    const payload = { fanLocation: { lat: 37.7760, lng: -122.4175 }, destinationSection: 'Sec 101', stadiumId: 'sim_1' };
+    const payload = {
+      fanLocation: { lat: 37.776, lng: -122.4175 },
+      destinationSection: 'Sec 101',
+      stadiumId: 'sim_1',
+    };
 
     getRecommendation(payload)
       .then((rec) => {
@@ -76,11 +89,19 @@ export default function SimulationPage() {
   const handleTriggerEvent = async (type, action, target) => {
     try {
       await triggerSimulationEvent(type, action, target);
-      setNotification({ open: true, message: `Simulated ${action} successfully.`, severity: 'success' });
+      setNotification({
+        open: true,
+        message: `Simulated ${action} successfully.`,
+        severity: 'success',
+      });
       // Core Feature: Immediately re-run AI Recommendation Engine without page refresh
       await fetchLatestRecommendation(`Triggered ${action} at ${target || 'Stadium'}`);
     } catch (err) {
-      setNotification({ open: true, message: `Simulation failed: ${err.message}`, severity: 'error' });
+      setNotification({
+        open: true,
+        message: `Simulation failed: ${err.message}`,
+        severity: 'error',
+      });
     }
   };
 
@@ -102,7 +123,7 @@ export default function SimulationPage() {
           <Typography variant="subtitle1" color="text.secondary" mb={4}>
             Simulate stadium events and watch the AI Decision Engine instantly recalculate routing.
           </Typography>
-          
+
           <Grid container spacing={3}>
             {/* Left Column: Controls & Feed */}
             <Grid xs={12} md={4}>
@@ -120,7 +141,10 @@ export default function SimulationPage() {
                 ) : recommendation ? (
                   <HeroCard data={recommendation} />
                 ) : (
-                  <Paper elevation={0} sx={{ p: 4, textAlign: 'center', bgcolor: 'error.50', color: 'error.main' }}>
+                  <Paper
+                    elevation={0}
+                    sx={{ p: 4, textAlign: 'center', bgcolor: 'error.50', color: 'error.main' }}
+                  >
                     <Typography variant="h6">CRITICAL: No Safe Routes Available</Typography>
                   </Paper>
                 )}
@@ -131,13 +155,15 @@ export default function SimulationPage() {
         </Container>
       </Box>
 
-      <Snackbar 
-        open={notification.open} 
-        autoHideDuration={4000} 
-        onClose={() => setNotification(prev => ({ ...prev, open: false }))}
+      <Snackbar
+        open={notification.open}
+        autoHideDuration={4000}
+        onClose={() => setNotification((prev) => ({ ...prev, open: false }))}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
       >
-        <Alert severity={notification.severity} variant="filled">{notification.message}</Alert>
+        <Alert severity={notification.severity} variant="filled">
+          {notification.message}
+        </Alert>
       </Snackbar>
     </PageContainer>
   );

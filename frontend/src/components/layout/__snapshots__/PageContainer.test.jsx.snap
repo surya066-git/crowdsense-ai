@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PageContainer Component > matches snapshot 1`] = `
+<div>
+  <main
+    class="page-container"
+  />
+</div>
+`;
+
+exports[`PageContainer Component matches snapshot 1`] = `
+<div>
+  <main
+    class="page-container"
+  />
+</div>
+`;

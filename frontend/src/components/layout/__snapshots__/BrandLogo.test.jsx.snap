@@ -1,0 +1,75 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BrandLogo Component > matches snapshot 1`] = `
+<div>
+  <a
+    aria-label="CrowdSense AI home"
+    class="brand-logo"
+    data-discover="true"
+    href="/"
+  >
+    <span
+      class="brand-logo-mark"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="3 11 22 2 13 21 11 13 3 11"
+        />
+      </svg>
+    </span>
+    <span
+      class="brand-logo-text"
+    >
+      CrowdSense AI
+    </span>
+  </a>
+</div>
+`;
+
+exports[`BrandLogo Component matches snapshot 1`] = `
+<div>
+  <a
+    aria-label="CrowdSense AI home"
+    class="brand-logo"
+    data-discover="true"
+    href="/"
+  >
+    <span
+      class="brand-logo-mark"
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        height="1em"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon
+          points="3 11 22 2 13 21 11 13 3 11"
+        />
+      </svg>
+    </span>
+    <span
+      class="brand-logo-text"
+    >
+      CrowdSense AI
+    </span>
+  </a>
+</div>
+`;

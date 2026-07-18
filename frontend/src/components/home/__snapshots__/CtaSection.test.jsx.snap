@@ -1,0 +1,227 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CtaSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-12plf5y"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthMd css-u4uvlt-MuiContainer-root"
+    >
+      <div
+        class="MuiBox-root css-1ejowvd"
+      >
+        <div
+          class="MuiBox-root css-6mmnfo"
+        />
+        <div
+          class="MuiBox-root css-rqgsqp"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-uynfxu-MuiTypography-root"
+            font-weight="800"
+          >
+            Ready to Upgrade Your Stadium Experience?
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 css-jf47gj-MuiTypography-root"
+          >
+            Join thousands of fans using CrowdSense AI to navigate stadiums safely and efficiently. Start your interactive demo now.
+          </h6>
+          <div
+            class="MuiStack-root css-67e3wp-MuiStack-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorPrimary css-1116tmf-MuiButtonBase-root-MuiButton-root"
+              data-discover="true"
+              href="/recommendation"
+              tabindex="0"
+            >
+              Start Demo
+              <span
+                class="MuiButton-icon MuiButton-endIcon css-3155yg-MuiButton-endIcon"
+              >
+                <svg
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                  <polyline
+                    points="12 5 19 12 12 19"
+                  />
+                </svg>
+              </span>
+            </a>
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorPrimary css-1kb9ync-MuiButtonBase-root-MuiButton-root"
+              data-discover="true"
+              href="/about"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon css-1d1erjx-MuiButton-startIcon"
+              >
+                <svg
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="16"
+                    y2="12"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="8"
+                    y2="8"
+                  />
+                </svg>
+              </span>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CtaSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-12plf5y"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthMd css-u4uvlt-MuiContainer-root"
+    >
+      <div
+        class="MuiBox-root css-1ejowvd"
+      >
+        <div
+          class="MuiBox-root css-6mmnfo"
+        />
+        <div
+          class="MuiBox-root css-rqgsqp"
+        >
+          <h2
+            class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-uynfxu-MuiTypography-root"
+            font-weight="800"
+          >
+            Ready to Upgrade Your Stadium Experience?
+          </h2>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle1 css-jf47gj-MuiTypography-root"
+          >
+            Join thousands of fans using CrowdSense AI to navigate stadiums safely and efficiently. Start your interactive demo now.
+          </h6>
+          <div
+            class="MuiStack-root css-67e3wp-MuiStack-root"
+          >
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeLarge MuiButton-colorPrimary css-1116tmf-MuiButtonBase-root-MuiButton-root"
+              data-discover="true"
+              href="/recommendation"
+              tabindex="0"
+            >
+              Start Demo
+              <span
+                class="MuiButton-icon MuiButton-endIcon css-3155yg-MuiButton-endIcon"
+              >
+                <svg
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="5"
+                    x2="19"
+                    y1="12"
+                    y2="12"
+                  />
+                  <polyline
+                    points="12 5 19 12 12 19"
+                  />
+                </svg>
+              </span>
+            </a>
+            <a
+              class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-sizeLarge MuiButton-colorPrimary css-1kb9ync-MuiButtonBase-root-MuiButton-root"
+              data-discover="true"
+              href="/about"
+              tabindex="0"
+            >
+              <span
+                class="MuiButton-icon MuiButton-startIcon css-1d1erjx-MuiButton-startIcon"
+              >
+                <svg
+                  fill="none"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle
+                    cx="12"
+                    cy="12"
+                    r="10"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="16"
+                    y2="12"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="8"
+                    y2="8"
+                  />
+                </svg>
+              </span>
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

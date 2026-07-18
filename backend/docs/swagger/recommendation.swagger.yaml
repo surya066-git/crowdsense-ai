@@ -31,10 +31,10 @@ paths:
                       example: -122.4194
                 destinationSection:
                   type: string
-                  example: "Section 101"
+                  example: 'Section 101'
                 stadiumId:
                   type: string
-                  example: "stadium_sf_01"
+                  example: 'stadium_sf_01'
       responses:
         '200':
           description: Successful recommendation

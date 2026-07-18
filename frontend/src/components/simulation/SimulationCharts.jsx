@@ -22,11 +22,11 @@ export function SimulationCharts({ historyData }) {
     datasets: [
       {
         label: 'Primary Gate Score Penalty',
-        data: historyData.map(h => h.score),
+        data: historyData.map((h) => h.score),
         borderColor: theme.palette.error.main,
         backgroundColor: 'transparent',
         tension: 0.4,
-      }
+      },
     ],
   };
 
@@ -38,13 +38,24 @@ export function SimulationCharts({ historyData }) {
       title: { display: false },
     },
     scales: {
-      y: { beginAtZero: true, suggestedMax: 100 }
-    }
+      y: { beginAtZero: true, suggestedMax: 100 },
+    },
   };
 
   return (
-    <Paper elevation={0} sx={{ p: 4, borderRadius: 4, border: `1px solid ${theme.palette.divider}`, height: '100%', minHeight: 300 }}>
-      <Typography variant="h6" fontWeight={700} gutterBottom>AI Recommendation Trend</Typography>
+    <Paper
+      elevation={0}
+      sx={{
+        p: 4,
+        borderRadius: 4,
+        border: `1px solid ${theme.palette.divider}`,
+        height: '100%',
+        minHeight: 300,
+      }}
+    >
+      <Typography variant="h6" fontWeight={700} gutterBottom>
+        AI Recommendation Trend
+      </Typography>
       <Box sx={{ height: 250, width: '100%' }}>
         <Line options={options} data={data} />
       </Box>

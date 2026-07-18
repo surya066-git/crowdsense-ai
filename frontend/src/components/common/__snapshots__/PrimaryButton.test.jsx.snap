@@ -1,0 +1,21 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PrimaryButton Component > matches snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary app-button app-button-primary css-74d805-MuiButtonBase-root-MuiButton-root"
+    tabindex="0"
+    type="button"
+  />
+</div>
+`;
+
+exports[`PrimaryButton Component matches snapshot 1`] = `
+<div>
+  <button
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-sizeMedium MuiButton-colorPrimary app-button app-button-primary css-74d805-MuiButtonBase-root-MuiButton-root"
+    tabindex="0"
+    type="button"
+  />
+</div>
+`;

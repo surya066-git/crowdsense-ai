@@ -7,4 +7,10 @@ export default {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
+  collectCoverageFrom: [
+    'src/**/*.{js,jsx}',
+    '!src/main.jsx',
+    '!src/**/*.test.{js,jsx}',
+    '!src/assets/**',
+  ],
 };

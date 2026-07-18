@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom';
 import { HeroCard } from '../../src/components/recommendation/HeroCard.jsx';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
@@ -17,7 +16,7 @@ describe('HeroCard Component', () => {
     render(
       <ThemeProvider theme={mockTheme}>
         <HeroCard data={mockData} />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.getByText('East Gate')).toBeInTheDocument();
@@ -28,7 +27,7 @@ describe('HeroCard Component', () => {
     render(
       <ThemeProvider theme={mockTheme}>
         <HeroCard data={mockData} />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.getByText('12 mins')).toBeInTheDocument();
@@ -39,7 +38,7 @@ describe('HeroCard Component', () => {
     render(
       <ThemeProvider theme={mockTheme}>
         <HeroCard data={mockData} />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
 
     expect(screen.getByText('92')).toBeInTheDocument();

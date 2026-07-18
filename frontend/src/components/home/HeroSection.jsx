@@ -17,7 +17,10 @@ export function HeroSection() {
       }}
     >
       <Container maxWidth="lg">
-        <Stack spacing={4} sx={{ alignItems: 'center', textAlign: 'center', zIndex: 1, position: 'relative' }}>
+        <Stack
+          spacing={4}
+          sx={{ alignItems: 'center', textAlign: 'center', zIndex: 1, position: 'relative' }}
+        >
           <Typography
             component="h1"
             variant="h2"
@@ -32,8 +35,13 @@ export function HeroSection() {
           >
             Smart Stadium Experience Powered by AI
           </Typography>
-          <Typography variant="h6" color="text.secondary" sx={{ maxWidth: 600, mb: 2, fontWeight: 400 }}>
-            CrowdSense AI helps fans navigate crowded stadiums with real-time intelligence, ensuring safe entry, optimized routes, and zero waiting time.
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            sx={{ maxWidth: 600, mb: 2, fontWeight: 400 }}
+          >
+            CrowdSense AI helps fans navigate crowded stadiums with real-time intelligence, ensuring
+            safe entry, optimized routes, and zero waiting time.
           </Typography>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
             <Button
@@ -72,25 +80,27 @@ export function HeroSection() {
               justifyContent: 'center',
               boxShadow: theme.shadows[10],
               position: 'relative',
-              overflow: 'hidden'
+              overflow: 'hidden',
             }}
           >
-             <Typography variant="h5" color="grey.500" sx={{ fontWeight: 500 }}>
-               [ AI Dashboard Illustration Placeholder ]
-             </Typography>
-             {/* Decorative glow */}
-             <Box sx={{
-                 position: 'absolute',
-                 top: '50%',
-                 left: '50%',
-                 transform: 'translate(-50%, -50%)',
-                 width: '60%',
-                 height: '60%',
-                 background: theme.palette.primary.main,
-                 filter: 'blur(100px)',
-                 opacity: 0.15,
-                 zIndex: 0,
-             }} />
+            <Typography variant="h5" color="grey.500" sx={{ fontWeight: 500 }}>
+              [ AI Dashboard Illustration Placeholder ]
+            </Typography>
+            {/* Decorative glow */}
+            <Box
+              sx={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '60%',
+                height: '60%',
+                background: theme.palette.primary.main,
+                filter: 'blur(100px)',
+                opacity: 0.15,
+                zIndex: 0,
+              }}
+            />
           </Box>
         </Stack>
       </Container>

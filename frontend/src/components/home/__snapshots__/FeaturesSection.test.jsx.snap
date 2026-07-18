@@ -1,0 +1,675 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FeaturesSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-aidbym"
+    id="features"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        Powerful Features
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Everything you need for a seamless game day.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="9 11 12 14 22 4"
+                  />
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                AI Recommendation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Personalized gate suggestions based on real-time crowd data.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="3 11 22 2 13 21 11 13 3 11"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Smart Navigation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Interactive maps guiding you smoothly to your designated seat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="22 12 18 12 15 21 9 3 6 12 2 12"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Crowd Analysis
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Predictive density mapping to avoid congested stadium zones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="8"
+                    y2="12"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="16"
+                    y2="16"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Live Incidents
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Real-time alerts for bottlenecks or safety hazards.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="6"
+                    x2="6"
+                    y1="3"
+                    y2="15"
+                  />
+                  <circle
+                    cx="18"
+                    cy="6"
+                    r="3"
+                  />
+                  <circle
+                    cx="6"
+                    cy="18"
+                    r="3"
+                  />
+                  <path
+                    d="M18 9a9 9 0 0 1-9 9"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Alternative Route
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Dynamic rerouting if your primary path becomes crowded.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Safety Score
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Instant safety assessments for every gate and concourse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FeaturesSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-aidbym"
+    id="features"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        Powerful Features
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Everything you need for a seamless game day.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="9 11 12 14 22 4"
+                  />
+                  <path
+                    d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                AI Recommendation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Personalized gate suggestions based on real-time crowd data.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="3 11 22 2 13 21 11 13 3 11"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Smart Navigation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Interactive maps guiding you smoothly to your designated seat.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    points="22 12 18 12 15 21 9 3 6 12 2 12"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Crowd Analysis
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Predictive density mapping to avoid congested stadium zones.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"
+                  />
+                  <line
+                    x1="12"
+                    x2="12"
+                    y1="8"
+                    y2="12"
+                  />
+                  <line
+                    x1="12"
+                    x2="12.01"
+                    y1="16"
+                    y2="16"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Live Incidents
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Real-time alerts for bottlenecks or safety hazards.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line
+                    x1="6"
+                    x2="6"
+                    y1="3"
+                    y2="15"
+                  />
+                  <circle
+                    cx="18"
+                    cy="6"
+                    r="3"
+                  />
+                  <circle
+                    cx="6"
+                    cy="18"
+                    r="3"
+                  />
+                  <path
+                    d="M18 9a9 9 0 0 1-9 9"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Alternative Route
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Dynamic rerouting if your primary path becomes crowded.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="4"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1ujmtft-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <div
+                class="MuiBox-root css-ob0502"
+              >
+                <svg
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                  />
+                </svg>
+              </div>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="600"
+              >
+                Safety Score
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Instant safety assessments for every gate and concourse.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

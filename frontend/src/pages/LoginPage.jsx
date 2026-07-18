@@ -50,10 +50,7 @@ export default function LoginPage() {
         <Typography variant="body2" color="text.secondary" sx={{ mb: 3 }}>
           Sign in to access your saved recommendations and history.
         </Typography>
-        <SecondaryButton 
-          onClick={handleLogin} 
-          disabled={isLoggingIn}
-        >
+        <SecondaryButton onClick={handleLogin} disabled={isLoggingIn}>
           {isLoggingIn ? 'Signing in...' : 'Sign in with Google'}
         </SecondaryButton>
       </AppCard>

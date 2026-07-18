@@ -1,0 +1,325 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HowItWorksSection Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-13g25so"
+    id="how-it-works"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        How It Works
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Four simple steps to a better stadium experience.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                1
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Enter Destination
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Tell the app your ticket details, including block and seat number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                2
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Upload Stadium Data
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                The system fetches live stadium congestion and incident reports.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                3
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                AI Analysis
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Gemini AI processes the data to find the optimal path for you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                4
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Get Recommendation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Receive your personalized gate assignment and safe walking route.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HowItWorksSection Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-13g25so"
+    id="how-it-works"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-5c1adp-MuiContainer-root"
+    >
+      <h2
+        class="MuiTypography-root MuiTypography-h3 MuiTypography-gutterBottom css-16ok815-MuiTypography-root"
+        font-weight="700"
+      >
+        How It Works
+      </h2>
+      <h6
+        class="MuiTypography-root MuiTypography-subtitle1 css-n1jlpx-MuiTypography-root"
+        mb="8"
+      >
+        Four simple steps to a better stadium experience.
+      </h6>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-4 css-kqg16c-MuiGrid-root"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                1
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Enter Destination
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Tell the app your ticket details, including block and seat number.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                2
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Upload Stadium Data
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                The system fetches live stadium congestion and incident reports.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                3
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                AI Analysis
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Gemini AI processes the data to find the optimal path for you.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-direction-xs-row css-17fpwt7-MuiGrid-root"
+          md="3"
+          sm="6"
+          xs="12"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiCard-root css-1qvrajq-MuiPaper-root-MuiCard-root"
+            style="--Paper-shadow: none;"
+          >
+            <div
+              class="MuiCardContent-root css-21mhzp-MuiCardContent-root"
+            >
+              <h2
+                class="MuiTypography-root MuiTypography-h2 MuiTypography-gutterBottom css-1lcbsct-MuiTypography-root"
+                font-weight="800"
+              >
+                4
+              </h2>
+              <h6
+                class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom css-1wmifpn-MuiTypography-root"
+                font-weight="700"
+              >
+                Get Recommendation
+              </h6>
+              <p
+                class="MuiTypography-root MuiTypography-body2 css-7ctihp-MuiTypography-root"
+              >
+                Receive your personalized gate assignment and safe walking route.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

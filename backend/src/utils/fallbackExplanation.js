@@ -8,11 +8,11 @@ export const getFallbackExplanation = (recommendationData) => {
   const factors = recommendationData.explainabilityMatrix[bestId] || {};
 
   let explanation = `We recommend ${bestGate.gateName} based on real-time stadium data. `;
-  
+
   if (factors.crowdImpact) {
     explanation += `The crowd density at this gate is currently ${factors.crowdImpact.toLowerCase()}. `;
   }
-  
+
   if (factors.incidentProximity && factors.incidentProximity !== 'None') {
     explanation += `Please be aware of a ${factors.incidentProximity.toLowerCase()} severity incident nearby, but it remains the safest route. `;
   } else {
@@ -33,9 +33,9 @@ export const getFallbackExplanation = (recommendationData) => {
     explanation: explanation.trim(),
     alternative: alternativeText,
     safetyTips: [
-      "Follow stadium staff instructions at all times.",
-      "Keep your digital ticket ready before reaching the queue."
+      'Follow stadium staff instructions at all times.',
+      'Keep your digital ticket ready before reaching the queue.',
     ],
-    riskLevel
+    riskLevel,
   };
 };

@@ -8,12 +8,12 @@ import { usePageTitle } from '../hooks/usePageTitle.js';
 export default function UploadPage() {
   usePageTitle('Upload Data');
   const theme = useTheme();
-  
+
   // Used to trigger a refresh of the history component when a new file is uploaded
   const [refreshTrigger, setRefreshTrigger] = useState(0);
 
   const handleUploadSuccess = () => {
-    setRefreshTrigger(prev => prev + 1);
+    setRefreshTrigger((prev) => prev + 1);
   };
 
   return (

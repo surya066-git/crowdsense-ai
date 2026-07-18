@@ -13,4 +13,15 @@ export default defineConfig({
     port: 4173,
     host: '0.0.0.0',
   },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./jest.setup.js'],
+    globals: true,
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/**/*.{js,jsx}'],
+      exclude: ['src/main.jsx', 'src/**/*.test.{js,jsx}', 'src/assets/**']
+    }
+  }
 });

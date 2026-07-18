@@ -1,5 +1,4 @@
 import express from 'express';
-import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';
 import routes from './routes/index.js';
 import { config } from './config/env.js';
@@ -18,7 +17,6 @@ const app = express();
 app.set('trust proxy', 1);
 app.disable('x-powered-by');
 
-app.use(helmet());
 app.use(requestId);
 app.use(requestTimeout);
 app.use(requestLogger);

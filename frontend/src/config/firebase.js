@@ -21,7 +21,9 @@ if (isFirebaseConfigured) {
     console.error('Firebase initialization failed:', error);
   }
 } else {
-  console.warn('Firebase configuration is missing in environment variables. Authentication and Firestore features will be disabled.');
+  console.warn(
+    'Firebase configuration is missing in environment variables. Authentication and Firestore features will be disabled.',
+  );
 }
 
 export { app, auth, db, isFirebaseConfigured };

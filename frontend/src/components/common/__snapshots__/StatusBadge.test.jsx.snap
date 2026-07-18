@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`StatusBadge Component > matches snapshot 1`] = `
+<div>
+  <span
+    class="MuiBadge-root css-63ezxx-MuiBadge-root"
+  >
+    <span
+      aria-hidden="true"
+      class="MuiBadge-badge MuiBadge-dot MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightCircular MuiBadge-overlapCircular MuiBadge-colorPrimary css-x8pjyp-MuiBadge-badge"
+      style="--Badge-translate: 50%, -50%; --Badge-inset: 14% 14% auto auto; --Badge-origin: 100% 0%;"
+    />
+  </span>
+</div>
+`;
+
+exports[`StatusBadge Component matches snapshot 1`] = `
+<div>
+  <span
+    class="MuiBadge-root css-63ezxx-MuiBadge-root"
+  >
+    <span
+      aria-hidden="true"
+      class="MuiBadge-badge MuiBadge-dot MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightCircular MuiBadge-overlapCircular MuiBadge-colorPrimary css-x8pjyp-MuiBadge-badge"
+      style="--Badge-translate: 50%, -50%; --Badge-inset: 14% 14% auto auto; --Badge-origin: 100% 0%;"
+    />
+  </span>
+</div>
+`;

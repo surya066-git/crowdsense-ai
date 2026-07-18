@@ -1,17 +1,39 @@
 import { Box, Container, Grid, Typography, Card, CardContent } from '@mui/material';
 
 const steps = [
-  { step: '1', title: 'Enter Destination', desc: 'Tell the app your ticket details, including block and seat number.' },
-  { step: '2', title: 'Upload Stadium Data', desc: 'The system fetches live stadium congestion and incident reports.' },
-  { step: '3', title: 'AI Analysis', desc: 'Gemini AI processes the data to find the optimal path for you.' },
-  { step: '4', title: 'Get Recommendation', desc: 'Receive your personalized gate assignment and safe walking route.' },
+  {
+    step: '1',
+    title: 'Enter Destination',
+    desc: 'Tell the app your ticket details, including block and seat number.',
+  },
+  {
+    step: '2',
+    title: 'Upload Stadium Data',
+    desc: 'The system fetches live stadium congestion and incident reports.',
+  },
+  {
+    step: '3',
+    title: 'AI Analysis',
+    desc: 'Gemini AI processes the data to find the optimal path for you.',
+  },
+  {
+    step: '4',
+    title: 'Get Recommendation',
+    desc: 'Receive your personalized gate assignment and safe walking route.',
+  },
 ];
 
 export function HowItWorksSection() {
   return (
     <Box id="how-it-works" sx={{ py: { xs: 8, md: 12 }, bgcolor: 'background.paper' }}>
       <Container maxWidth="lg">
-        <Typography variant="h3" component="h2" sx={{ textAlign: 'center' }} fontWeight={700} gutterBottom>
+        <Typography
+          variant="h3"
+          component="h2"
+          sx={{ textAlign: 'center' }}
+          fontWeight={700}
+          gutterBottom
+        >
           How It Works
         </Typography>
         <Typography variant="subtitle1" color="text.secondary" sx={{ textAlign: 'center' }} mb={8}>

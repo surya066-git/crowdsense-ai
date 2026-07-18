@@ -4,16 +4,21 @@ import { logger } from '../utils/logger.js';
 export const saveRecommendationHistory = async (recommendation, userId) => {
   try {
     if (!hasFirebaseAdminCredentials()) {
-      logger.debug('Skipping recommendation history save because Firebase Admin credentials are not configured.');
+      logger.debug(
+        'Skipping recommendation history save because Firebase Admin credentials are not configured.',
+      );
       return;
     }
 
     const db = getFirestore();
-    await db.collection('recommendations').doc(recommendation.recommendationId).set({
-      ...recommendation,
-      userId: userId || 'anonymous',
-      createdAt: new Date().toISOString()
-    });
+    await db
+      .collection('recommendations')
+      .doc(recommendation.recommendationId)
+      .set({
+        ...recommendation,
+        userId: userId || 'anonymous',
+        createdAt: new Date().toISOString(),
+      });
   } catch (error) {
     // We log but don't fail the API request if history saving fails
     logger.error(`Failed to save recommendation to Firestore: ${error.message}`);

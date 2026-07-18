@@ -1,0 +1,373 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MobileNavigation Component > matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 mobile-navigation css-1gtchvp-MuiPaper-root"
+    style="--Paper-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBottomNavigation-root css-7ax0nd-MuiBottomNavigation-root"
+    >
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+          <polyline
+            points="9 22 9 12 15 12 15 22"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label Mui-selected css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Home
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="16 16 12 12 8 16"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="12"
+            y2="21"
+          />
+          <path
+            d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"
+          />
+          <polyline
+            points="16 16 12 12 8 16"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Upload
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="2"
+            y2="18"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="6"
+            y2="22"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Map
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <polygon
+            points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Recommendation
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <polyline
+            points="12 6 12 12 16 14"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          History
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MobileNavigation Component matches snapshot 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation8 mobile-navigation css-1gtchvp-MuiPaper-root"
+    style="--Paper-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);"
+  >
+    <div
+      class="MuiBottomNavigation-root css-7ax0nd-MuiBottomNavigation-root"
+    >
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root Mui-selected css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+          <polyline
+            points="9 22 9 12 15 12 15 22"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label Mui-selected css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Home
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline
+            points="16 16 12 12 8 16"
+          />
+          <line
+            x1="12"
+            x2="12"
+            y1="12"
+            y2="21"
+          />
+          <path
+            d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"
+          />
+          <polyline
+            points="16 16 12 12 8 16"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Upload
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"
+          />
+          <line
+            x1="8"
+            x2="8"
+            y1="2"
+            y2="18"
+          />
+          <line
+            x1="16"
+            x2="16"
+            y1="6"
+            y2="22"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Map
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <polygon
+            points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          Recommendation
+        </span>
+      </button>
+      <button
+        class="MuiButtonBase-root MuiBottomNavigationAction-root css-1scjuq2-MuiButtonBase-root-MuiBottomNavigationAction-root"
+        tabindex="0"
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          fill="none"
+          height="1em"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="10"
+          />
+          <polyline
+            points="12 6 12 12 16 14"
+          />
+        </svg>
+        <span
+          class="MuiBottomNavigationAction-label css-j5o089-MuiBottomNavigationAction-label"
+        >
+          History
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;

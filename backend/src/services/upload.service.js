@@ -1,6 +1,10 @@
 import { validateFileContext } from './parser.service.js';
 import { uploadFileToStorage } from './storage.service.js';
-import { saveUploadMetadata, getUploadHistory, deleteUploadRecord } from '../repositories/upload.repository.js';
+import {
+  saveUploadMetadata,
+  getUploadHistory,
+  deleteUploadRecord,
+} from '../repositories/upload.repository.js';
 import { AppError } from '../errors/AppError.js';
 import { logger } from '../utils/logger.js';
 
@@ -27,11 +31,11 @@ export const processFileUpload = async (file, uploader = 'Admin') => {
     status: 'SUCCESS',
     uploader,
     storagePath,
-    validationResult: 'Passed'
+    validationResult: 'Passed',
   };
 
   const savedRecord = await saveUploadMetadata(metadata);
-  
+
   return savedRecord;
 };
 
