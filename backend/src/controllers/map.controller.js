@@ -1,3 +1,9 @@
+/**
+ * @module map.controller
+ * @description Express controllers for real-time stadium map data endpoints.
+ * Provides gate status, crowd density, incidents, weather, and map configuration.
+ */
+
 import {
   getGatesData,
   getCrowdDensityZones,
@@ -8,7 +14,12 @@ import {
 import { asyncHandler } from '../utils/asyncHandler.js';
 
 /**
- * Get all gates and their real-time status.
+ * Handles GET /map/gates
+ * Returns all stadium gates with their real-time operational status and crowd levels.
+ * @function getGates
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>} JSON response with array of gate data objects.
  */
 export const getGates = asyncHandler(async (req, res) => {
   const data = await getGatesData();
@@ -16,7 +27,12 @@ export const getGates = asyncHandler(async (req, res) => {
 });
 
 /**
- * Get current crowd density across different stadium zones.
+ * Handles GET /map/crowd
+ * Returns crowd density measurements across all stadium zones.
+ * @function getCrowdDensity
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>} JSON response with crowd density zone data.
  */
 export const getCrowdDensity = asyncHandler(async (req, res) => {
   const data = await getCrowdDensityZones();
@@ -24,7 +40,12 @@ export const getCrowdDensity = asyncHandler(async (req, res) => {
 });
 
 /**
- * Get active incidents reported in the stadium.
+ * Handles GET /map/incidents
+ * Returns all active safety incidents reported in or near the stadium.
+ * @function getIncidents
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>} JSON response with array of active incidents.
  */
 export const getIncidents = asyncHandler(async (req, res) => {
   const data = await getIncidentsData();
@@ -32,7 +53,12 @@ export const getIncidents = asyncHandler(async (req, res) => {
 });
 
 /**
- * Get current weather details for the stadium.
+ * Handles GET /map/weather
+ * Returns current weather conditions at the stadium location.
+ * @function getWeather
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>} JSON response with weather data.
  */
 export const getWeather = asyncHandler(async (req, res) => {
   const data = await getWeatherData();
@@ -40,7 +66,12 @@ export const getWeather = asyncHandler(async (req, res) => {
 });
 
 /**
- * Get map rendering configuration (bounds, initial center, zoom).
+ * Handles GET /map/config
+ * Returns the map rendering configuration including center coordinates, zoom, and bounds.
+ * @function getMapConfig
+ * @param {import('express').Request} req - Express request object.
+ * @param {import('express').Response} res - Express response object.
+ * @returns {Promise<void>} JSON response with map configuration object.
  */
 export const getMapConfig = asyncHandler(async (req, res) => {
   const data = await getMapConfigData();
