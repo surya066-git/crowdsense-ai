@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { env } from '../config/env.js';
+import { auth } from '../config/firebase.js';
 import { createRequestId } from '../utils/requestId.js';
 
 export const apiClient = axios.create({
@@ -10,8 +11,20 @@ export const apiClient = axios.create({
   },
 });
 
-apiClient.interceptors.request.use((config) => {
+apiClient.interceptors.request.use(async (config) => {
   config.headers['X-Request-Id'] = createRequestId();
+  
+  if (auth?.currentUser) {
+    try {
+      const token = await auth.currentUser.getIdToken();
+      if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
+    } catch (error) {
+      console.warn('Failed to get Firebase Auth token:', error);
+    }
+  }
+
   return config;
 });
 

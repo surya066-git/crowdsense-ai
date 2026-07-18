@@ -1,7 +1,7 @@
 import { getFirestore, hasFirebaseAdminCredentials } from '../firebase/admin.js';
 import { logger } from '../utils/logger.js';
 
-export const saveRecommendationHistory = async (recommendation) => {
+export const saveRecommendationHistory = async (recommendation, userId) => {
   try {
     if (!hasFirebaseAdminCredentials()) {
       logger.debug('Skipping recommendation history save because Firebase Admin credentials are not configured.');
@@ -11,6 +11,7 @@ export const saveRecommendationHistory = async (recommendation) => {
     const db = getFirestore();
     await db.collection('recommendations').doc(recommendation.recommendationId).set({
       ...recommendation,
+      userId: userId || 'anonymous',
       createdAt: new Date().toISOString()
     });
   } catch (error) {

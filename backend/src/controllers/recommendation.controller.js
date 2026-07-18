@@ -5,7 +5,8 @@ export const getRecommendation = asyncHandler(async (req, res) => {
   const { fanLocation, destinationSection, stadiumId } = req.body;
 
   try {
-    const recommendation = await processRecommendation(fanLocation, destinationSection, stadiumId);
+    const userId = req.user?.uid;
+    const recommendation = await processRecommendation(fanLocation, destinationSection, stadiumId, userId);
     
     res.status(200).json({
       success: true,

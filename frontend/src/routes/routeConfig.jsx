@@ -15,6 +15,17 @@ export const publicRoutes = Object.freeze([
     index: true,
   },
   {
+    path: ROUTE_PATHS.ABOUT,
+    element: <AboutPage />,
+  },
+  {
+    path: ROUTE_PATHS.LOGIN,
+    element: <LoginPage />,
+  },
+]);
+
+export const protectedRoutes = Object.freeze([
+  {
     path: ROUTE_PATHS.UPLOAD,
     element: <UploadPage />,
   },
@@ -33,13 +44,5 @@ export const publicRoutes = Object.freeze([
   {
     path: ROUTE_PATHS.HISTORY,
     element: <HistoryPage />,
-  },
-  {
-    path: ROUTE_PATHS.ABOUT,
-    element: <AboutPage />,
-  },
-  {
-    path: ROUTE_PATHS.LOGIN,
-    element: <LoginPage />,
   },
 ]);

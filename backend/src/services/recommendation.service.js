@@ -3,7 +3,7 @@ import { saveRecommendationHistory } from '../repositories/recommendation.reposi
 import { getGatesData, getCrowdDensityZones, getIncidentsData, getWeatherData } from './map.service.js';
 import { generateExplanation } from './explanation.service.js';
 
-export const processRecommendation = async (fanLocation, destinationSection, stadiumId) => {
+export const processRecommendation = async (fanLocation, destinationSection, stadiumId, userId) => {
   // Fetch current stadium state (in a real app, this might come from a fast Redis cache)
   const [gates, crowd, incidents, weather] = await Promise.all([
     getGatesData(),
@@ -31,7 +31,7 @@ export const processRecommendation = async (fanLocation, destinationSection, sta
   };
 
   // Fire and forget storage
-  saveRecommendationHistory(finalRecommendation);
+  saveRecommendationHistory(finalRecommendation, userId);
 
   return finalRecommendation;
 };
