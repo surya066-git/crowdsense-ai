@@ -114,7 +114,7 @@ npm run dev
 
 ---
 
-## 🔮 Future Scope (FIFA Vision)
+## 🔮 Future Scope (FIFA Vision):
 - **Computer Vision Integration**: Replace CSV uploads with live CCTV crowd density extraction.
 - **Multilingual Support**: Real-time Gemini translation for international fans.
 - **Wearable Integration**: Push notifications to Apple Watch / WearOS during stadium evacuations.
